@@ -1,0 +1,83 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  background-image:url("../Assets/images/OKBX0D0.jpg");
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.art {
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: white;
+  color : black;
+
+
+  padding: 12px;
+  width: 25% ;
+  overflow: auto;
+  margin: 25px;
+  opacity: 0.9;
+  vertical-align: top;
+
+}
+.sub {
+  background-color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  opacity : 1;
+  width : 125px;
+  height: 35px;
+  color : black;
+  transition: color 1000ms;
+
+}
+input{
+  margin-bottom: 15px;
+  padding:10px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius:5px;
+  height: 50px;
+  border:0px;
+  font-size:11pt;
+  text-align: center;
+} 
+.sub:hover{
+  color:skyblue;
+}
+p{
+  line-height: 25px;
+}
+@media all and (max-device-width : 768px) {
+  body {
+    max-width :13%;
+    background-position: inherit;
+  }
+ 
+
+
+  .head header{
+    background-color: skyblue;
+    display: inline;
+    max-height: 100%;
+
+  }
+  .side {
+    min-width: 250%;
+  }
+  article {
+    display: inline;
+    min-width: 550%;
+    min-height: 100%;
+    overflow: scroll;
+  }
+  section{
+    min-height: 150px;
+  }
+  .side {
+
+    margin-right: 0px;
+    min-width: 550%;
+    min-height: 100%;
+  }
+}
