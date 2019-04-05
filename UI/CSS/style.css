@@ -37,3 +37,8 @@ html, body{
 p{
   line-height: 25px;
 }
+@media (min-width: 481px) and (max-width: 767px) {
+  
+    
+  
+}
