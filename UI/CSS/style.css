@@ -1,0 +1,39 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-image:url("/IMG/OKBX0D0.jpg");
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .art {
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+    color : black;
+  
+  
+    padding: 12px;
+    width: 25% ;
+    overflow: auto;
+    margin: 25px;
+    opacity: 0.9;
+    vertical-align: top;
+  
+  }
+  .sub {
+    background-color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    opacity : 1;
+    width : 125px;
+    height: 35px;
+    color : black;
+    transition: color 1000ms;
+  
+  }
+  .sub:hover{
+    color:skyblue;
+  }
+  p{
+    line-height: 25px;
+  }
