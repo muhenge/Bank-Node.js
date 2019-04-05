@@ -81,3 +81,6 @@ p{
     min-height: 100%;
   }
 }
+.none{
+  display: none;
+}
