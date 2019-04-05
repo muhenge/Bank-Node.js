@@ -84,3 +84,56 @@ p{
 .none{
   display: none;
 }
+/* -----------------------------------------navigation for top menu*------------------------------*/
+.menu nav{
+  background-color: white;
+  display: inline-block;
+  border: 1px solid skyblue;
+  border-radius: 5px;
+  opacity: 0.7;
+}
+li :hover {
+  
+  opacity: 1;
+  font-size: 25px;
+  transition-delay: 200ms;
+  transition-duration: 200ms;
+  transition-timing-function: initial;
+ 
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/* a:hover{
+  width:75px;
+} */
+ul li{
+  display: inline;
+  padding : 35px;
+  margin : 25px;
+}
+
+/*--------------------------end navigation menu------------------------------------------->aside   {
+    float: right;
+  
+  }
+  /* section .side{
+    vertical-align: top;
+  } */
+ .access{
+  width: 100%;
+}
+
+.act :hover {
+ 
+  background : skyblue;
+  color : white;
+  font-size: 20px;
+  transition-delay: 0ms;
+  transition-duration: 300ms;
+}
+aside   {
+  float: right;
+
+}
