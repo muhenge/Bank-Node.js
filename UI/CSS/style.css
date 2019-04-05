@@ -81,9 +81,7 @@ p{
     min-height: 100%;
   }
 }
-.none{
-  display: none;
-}
+
 /* -----------------------------------------navigation for top menu*------------------------------*/
 .menu nav{
   background-color: white;
@@ -172,8 +170,15 @@ th {
   background-color: #333;
   color: white;
 } 
-#img-text{
-  
-  
+.none{
+  display: none;
+}
+.table-width{
+  width: 75%;
+}
+.admin_access{
+  display: inline;
+  border: 1px solid skyblue;
+  border-radius: 5px;
 }
 /*----------------------------------------------end--------------------------------------------------------?
