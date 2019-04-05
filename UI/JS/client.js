@@ -1,5 +1,3 @@
-// const table = document.getElementById('tableId');
-//const clientDash = document.getElementById('dashView');
 const clickDash = document.getElementById('clickDash');
 const clickTrans = document.getElementById('transaction');
 const dashArticle = document.getElementById('dashArt');

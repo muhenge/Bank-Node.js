@@ -173,6 +173,12 @@ th {
 .none{
   display: none;
 }
-
-
+.table-width{
+  width: 75%;
+}
+.admin_access{
+  display: inline;
+  border: 1px solid skyblue;
+  border-radius: 5px;
+}
 /*----------------------------------------------end--------------------------------------------------------?
