@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Welcome | Banka online services</title>
+</head>
+<body >
+<header>
+
+    <a href="/UI/index.html"><img src="../Assets/images/logo.png" alt="logo"></a>
+    <p id="date"></p>
+</header>
+<section>
+    <article class="art">
+    <h1>Staff announcements board</h1>
+    <p>
+        Make sure to double check before making any transaction.
+    </p>
+    </article>
+    <article class="art">
+       <form >
+            <input type="number"  placeholder="Enter Client Banka account here" required><br><br>
+            <input type="text"  placeholder="Reason" required><br><br>
+            <input type="number" placeholder="Enter amount to credit">
+            <button type="submit" class="sub" >Credit account</button>
+       </form>
+       
+      </article>
+      <article class="art">
+        <form id="debit" >
+            <input type="number"  placeholder="Enter Client Banka account here" required><br><br>
+            <input type="number" placeholder="Enter amount to credit">
+            <input type="text"  placeholder="Reason" required><br><br>
+            <button type="submit" class="sub" >Debit account</button>
+        </form>
+      </article>
+
+      
+    </section>
+<script src="/UI/JS/client.js" ></script>
+</body>
+</html>
