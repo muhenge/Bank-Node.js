@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/UI/CSS/style.css">
+
     <title>Admin. | Banka online services</title>
+
 </head>
 <body >
 
@@ -16,7 +18,7 @@
     <a href="/UI/index.html"><img src="../Assets/images/logo.png" alt="logo"></a>
  </header>   
     <section>
-    <article class="art" id="artParagraph">
+    <article class="art" >
             <h1>Create a new Staff</h1><br>
             <form action="" >
                 <input type="text" name="Account number" placeholder="Enter First name" ><br>
@@ -34,37 +36,22 @@
                 <button type="submit" class="sub">Create account</button> 
             </form>
     </article>
-    <article class="art" id="artParagraph">
-            <h1>Activate / Desactivate client accounts</h1><br>
+    <article class="art" >
+            <h1>Activate / Desactivate Staff/Admin accounts</h1><br>
             <form action="" >
-                <input type="number" name="Account number" placeholder="Enter account number" ><br>
-                <button type="submit" class="sub">Activate</button> <button type="submit" class="sub">Desactivate</button>
+                <input type="number" name="Account number" placeholder="Enter account number" id='in' required><br>
+                <input type="button" class="sub" value="Desactivate" id="admin_out">  <button type="submit" class="sub">Activate</button>
             </form>
 
         </article>
-
-   
-</section>
-
-
-    
-
-    
-
-    
-      
-
-
-
-
-
-
-
-<script src="/UI/JS/admin_page.js" ></script>
-
+    </section>
+    <script src="/UI/JS/admin_page.js" ></script>
 </body>
 
-
-
-
 </html>
+
+
+
+
+
+
