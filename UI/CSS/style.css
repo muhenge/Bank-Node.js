@@ -78,9 +78,9 @@ p{
   section{
     min-height: 150px;
   }
-  aside .side .access .act{
-    float: right;
-    min-width: 50%;
+  aside .submitt{
+    display: block;
+    margin-left : 100%;
 
   }
  
