@@ -180,6 +180,9 @@ th {
 .table-width{
   width: 75%;
 }
+.logout{
+  float: right;
+}
 .admin_access{
   display: inline;
   border: 1px solid skyblue;
