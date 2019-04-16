@@ -13,12 +13,25 @@
 <body >
 
 <header>
-
-
-    <a href="/UI/index.html"><img src="../Assets/images/logo.png" alt="logo"></a>
- </header>   
+    <a href="admin.html"><img src="../Assets/images/logo.png" alt="logo"></a>
+    <div class="logout">
+        <form action="../index.html" class="sub">
+            <input type="submit" value="logout" class=" out admin_access"/>
+        </form>
+    </div>
+    
+    <div class="menu">
+        <nav>
+          <ul>
+            <li><a href="welcome.html">HOME</a></li>
+            <li><a href="" id="on">VIEW ALL ACCOUNTS</a></li>
+            <li><a href="#">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </div>
+</header>   
     <section>
-    <article class="art" >
+    <article class="art" id="dispayActive">
             <h1>Create a new Staff</h1><br>
             <form action="" >
                 <input type="text" name="Account number" placeholder="Enter First name" ><br>
@@ -36,15 +49,61 @@
                 <button type="submit" class="sub">Create account</button> 
             </form>
     </article>
-    <article class="art" >
-            <h1>Activate / Desactivate Staff/Admin accounts</h1><br>
+    <article class="art" id="deactive">
+            <h1>Activate / Deactivate Staff/Admin accounts</h1><br>
             <form action="" >
                 <input type="number" name="Account number" placeholder="Enter account number" id='in' required><br>
                 <input type="button" class="sub" value="Desactivate" id="admin_out">  <button type="submit" class="sub">Activate</button>
             </form>
 
         </article>
+        
+            <article class="art table-width none" id="tableV">
+                <table>
+                  <caption><h1>Your transaction history<h1></caption><br>
+                  <thead>
+                    <tr>
+                      <th>Date due</th>
+                      <th>First name</th>
+                      <th>Last name</th>
+         
+                      <th>DOB</th>
+         
+                      <th>ID</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                       <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                      <td></td>
+                    <td></td>
+                   </tr>
+                   
+                  </tbody>
+         
+                </table>
+         
+         
+               </article>
+      
+               <aside class="side">
+                <div class=" act access" id="login">
+                    <button type="submint" class="submitt art access" id="clickView">Staff accounts</button>
+                </div>
+                </aside>
+       
     </section>
+  
+    
     <script src="/UI/JS/admin_page.js" ></script>
 </body>
 
