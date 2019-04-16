@@ -1,6 +1,5 @@
 import joi from 'joi';
 
-
 exports.validUser = (data)=>{
     const user = {
         accountNumber : joi.string().min(10).required(),
