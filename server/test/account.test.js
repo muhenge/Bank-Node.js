@@ -5,14 +5,15 @@ import app from '../app'
 const {expect} = chai
 chai.use(chaiHttp)
 
-describe('signup', ()=>{ 
-    it('user should sign up', (done)=>{ 
-        chai.request(app).post('/API/v1/auth/signup').send(
+describe('create bank account', ()=>{ 
+    it('user should create a bank account', (done)=>{ 
+        chai.request(app).post('/API/v1/account').send(
             {
+                accountNumber : '12345678',
                 fname : 'herve',
                 lname : 'hello',
                 email : 'muhe@gmail.com',
-                pass : '12345678'
+                type : 'saving'
                 
                 
 
@@ -34,5 +35,4 @@ describe('signup', ()=>{
      })
 
  })
- 
 

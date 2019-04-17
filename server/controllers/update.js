@@ -6,14 +6,14 @@ const Updated = (req,res) =>{
     if(!yes)
         return res.status(401).json({
             status : 401,
-            error : 'ntibyakuze'
+            error : 'error unauthorized'
         })
         yes.fname = req.body.fname
         
 
     return res.status(200).json({
         status : 200,
-        msg : `Updated to ${yes.fname}`
+        msg : `Updated to from ${req.body.fname} ${yes.fname}`
     })
 }
 export default Updated
