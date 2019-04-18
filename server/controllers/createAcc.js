@@ -1,5 +1,8 @@
 import account from "../models/account.js"
 
+
+
+
 const accounts = (req,res)=>{
     let accountData = {
         accountNumber : req.body.accountNumber,
@@ -10,6 +13,8 @@ const accounts = (req,res)=>{
         balance : 0
        
     };
+
+
     account.push(accountData)
 
     return res.status(201).json({

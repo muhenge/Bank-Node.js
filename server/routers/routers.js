@@ -5,12 +5,18 @@ import del from "../controllers/del"
 import Updated from "../controllers/update"
 import accounts from "../controllers/createAcc"
 import transact from "../controllers/debit"
-const router = express.Router()
+import userValidator from "../middleware/userValidator"
+import signinValidator from '../middleware/signinValidator';
+import createAccountValidator from '../middleware/createAccountValidator';
 
-router.post('/auth/signup', sign )
-router.post('/auth/signin', signin )
+const router = express.Router()
+const signupReq  = userValidator();
+const signinReg = signinValidator();
+const created = createAccountValidator();
+router.post('/auth/signup',signupReq , sign )
+router.post('/auth/signin', signinReg, signin )
 router.delete('/user/:id',del)
 router.patch('/user/:id',Updated)
-router.post('/account',accounts)
+router.post('/account',created,accounts)
 router.post('/account/:accountNumber/debit',transact)
 export default router

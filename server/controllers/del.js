@@ -6,7 +6,7 @@ const del = (req,res) =>{
     if(!yes)
         return res.status(401).json({
             status : 401,
-            error : 'ntibyakuze'
+            error : 'not found'
         })
     const user = arr.indexOf(yes)
 

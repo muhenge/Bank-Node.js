@@ -11,12 +11,33 @@
 <body >
 
 <header>
-  <a href="/UI/index.html"><img src="../Assets/images/logo.png" alt="logo"></a>
-<header></header>
+  <div class="logout" >
+    <a href="adminStaffin.html" class="logout">Logout</a>
+  </div>
+  <a href="../index.html"><img src="../Assets/images/logo.png" alt="logo"></a>
+  <div class="menu">
+      <nav>
+        <ul>
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="admin.html">Admin access</a></li>
+          <li><a href="staff.html">Staff access</a></li>
+          
+        </ul>
+      </nav>
+    </div>
+  
+</header>
 <section>
-      <article class="art" id="table_admin">
+    <article class="art" id="welcome">
+      <h1>Accounts managements app</h1>
+      <h3>BANKA</h3>
+      <p>this is a staff administrator space, you can view all BANKA accounts, Delete, or view a specific account</p>
+        <button type="button" class="sub" value="Click to view all" id="viewAll">View all</button> 
+    </article>
+
+      <article class="art none" id="table_admin">
         <table>
-          <caption><h1>Your transaction history<h1></caption><br>
+          <caption><h1>List of accounts<h1></caption><br>
           <thead>
             <tr>
               <th>Date created</th>
@@ -38,19 +59,33 @@
                 <td></td>
             </tr>
           </tbody>
-        </table>
-    
-         <input type="number" name="account" id="account" placeholder="Enter account number"><br>
-        <input type="button" class="sub" value="Click to view"> <input type="button" class="sub" value="Click Delete"> 
-        <input type="button" class="sub" value="View all accounts"> 
+        </table><br>
+        <a href="adminStaff.html">Go back</a>
       </article>
       
-       
-      
-      
-      
-    </section>
+        <article class="art " id='delete'>
+          
+            <input type="number" class = "" name="account" id="account" placeholder="Enter account number to delete"><br>
+            <button type="button" class="sub" value="" id="dell">Delete</button>
+        </article>
+        <article class="art " id='view'>
+            <input type="number" class = "" name="account" id="account" placeholder="Enter account number to display"><br>
+            <button type="button" class="sub"  id="viewAll">View account</button>
+        </article>
 
-<script src="" ></script>
+    
+          
+      </section>
+
+      <div id="PopupTrigger" class="popup">
+          <div class="popup-content ">
+            <span class="close">&times;</span>
+              <p>This will delete the BANKA account, are you sure to proceed</p>
+              <button id="popupBtn"class="sub" >Cancel</button>
+              <button id="popupBtOk" class="sub">Confirm</button>
+          </div>
+        </div>
+
+  <script src="../JS/adminStaff.js" ></script>
 </body>
 </html>

@@ -35,6 +35,13 @@ html, body{
   transition: color 1000ms;
 
 }
+.logout{
+  float:right;
+  color:white;
+  border:white;
+
+
+}
 input{
   margin-bottom: 15px;
   padding:10px;
@@ -131,7 +138,6 @@ ul li{
  
   background : skyblue;
   color : white;
-  font-size: 20px;
   transition-delay: 0ms;
   transition-duration: 300ms;
 }
@@ -195,4 +201,38 @@ th {
 #table_admin{
   width: auto;
 }
+ .popup{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left:0;
+  top:0;
+  
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  opacity: 0.5;
+} 
+.popup-content{
+  position: relative;
+  left : 450px;
+  bottom: 0px;
+  top: 250px;
+}
+.logout{
+  float: right;
+
+}
+.closePopup{
+  color: skyblue;
+  font-size:25px;
+  font-weight: bold;
+}
+.closePopup:hover,
+.closePopup:focus{
+  color: skyblue;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /*----------------------------------------------end--------------------------------------------------------?%
