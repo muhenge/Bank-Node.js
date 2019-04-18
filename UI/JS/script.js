@@ -1,9 +1,11 @@
 const submit = document.getElementById('submitt');
 const article = document.getElementById('account-article');
+const lg = document.getElementById('loginClass');
 
 submit.addEventListener('click',($event)=>{
     if ($event.target){
         article.classList.remove('none');
+        lg.classList.add('none')
     }
     else{
         article.classList.add('none');

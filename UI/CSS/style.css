@@ -35,6 +35,13 @@ html, body{
   transition: color 1000ms;
 
 }
+.logout{
+  float:right;
+  color:white;
+  border:white;
+
+
+}
 input{
   margin-bottom: 15px;
   padding:10px;
@@ -131,7 +138,6 @@ ul li{
  
   background : skyblue;
   color : white;
-  font-size: 20px;
   transition-delay: 0ms;
   transition-duration: 300ms;
 }
